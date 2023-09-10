@@ -1,0 +1,14 @@
+{
+  "features": [
+    {
+      "properties": {
+        "place": "Morocco",
+        "mag": 5.0,
+        "time": 1633024800000
+      },
+      "geometry": {
+        "coordinates": [32.0, -5.0]
+      }
+    }
+  ]
+}
