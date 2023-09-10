@@ -4,7 +4,7 @@
 
 The Earthquake Alarm is a Spring Boot application designed to monitor and notify users about significant seismic activities, specifically in Morocco. This application integrates with the USGS Earthquake Data API to fetch live information and leverages the Twilio SMS API to notify users. It has built-in support for rate-limiting, caching, and automatic notification.
 
-![GitHub Workflow Status](https://github.com/noure/earthquake-alarm-morocco/actions/workflows/spring-boot.yml/badge.svg)
+![GitHub Workflow Status](https://github.com/noure/earthquake-alarm-morocco/actions/workflows/spring-boot.yaml/badge.svg)
 
 ---
 
