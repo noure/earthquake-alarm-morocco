@@ -1,0 +1,15 @@
+language: java
+jdk:
+  - openjdk17
+
+# Cache du répertoire .m2 pour accélérer les builds
+cache:
+  directories:
+    - $HOME/.m2
+
+# Phases du cycle de vie
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+script:
+  - mvn test -B
