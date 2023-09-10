@@ -19,7 +19,7 @@ public class NgrokInitializer {
     @PostConstruct
     public void init() {
         log.info("Initializing ngrok");
-        if (!isNgrokRunning()) {
+        if (!isNgrokRunningLinux()) {
             ProcessBuilder processBuilder = new ProcessBuilder();
 
             // Command to start ngrok on port 8080 (assuming ngrok is in system PATH)

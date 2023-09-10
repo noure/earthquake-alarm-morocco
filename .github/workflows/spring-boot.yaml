@@ -21,6 +21,17 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
+      - name: Install Ngrok
+        run: wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip ngrok-stable-linux-amd64.zip
+
+      - name: Run Ngrok
+        run: ./ngrok http 8080 &
+        continue-on-error: true
+
+      - name: Run tests with Ngrok URL
+        run: |
+          sleep 10  # on attend que Ngrok soit prêt
+          # on execute nos tests ici
       - name: Cache Maven dependencies
         uses: actions/cache@v2
         with:
